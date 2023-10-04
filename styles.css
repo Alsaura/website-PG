@@ -1,0 +1,316 @@
+body, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", "sans-serif";
+}
+
+.highlight {
+    color: #c5b6ff;
+}
+
+.logo img {
+    height: 50px; /* Sesuaikan tinggi logo sesuai kebutuhan Anda */
+    width: auto;
+    display: block;
+    padding-left: 80px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header {
+    background-color: rgba(237, 237, 237, 0.85);  /* Background dengan sedikit transparansi */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px);  /* Efek blur untuk background */
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: auto;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: auto; 
+    align-items: center;
+}
+.nav-links {
+    list-style: none;               /* Menghilangkan bullet points dari list */
+    display: flex;                  /* Menyusun tautan secara horizontal */
+    gap: 1.5rem;      
+    padding-right:50px;              /* Jarak antar tautan */
+}
+
+.nav-links a {
+    text-decoration: none;          /* Menghilangkan underline */
+    color: #25274D;                    /* Warna tautan */
+    transition: color 0.3s ease;    /* Transisi warna ketika hover */
+    padding: 0.5rem 1rem;           /* Beri sedikit padding untuk area klik yang lebih besar */
+    border-radius: 5px;             /* Memperlancar sudut untuk efek hover */
+}
+
+.nav-links a:hover {
+    color: #ff5733;                 /* Warna saat di-hover */
+}
+}
+
+.highlight {
+    color: ##939af3;  /* Contoh warna merah-oranye, Anda bisa menggantinya dengan kode warna lain */
+}
+.section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #25274D;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+}
+
+.content {
+    flex: 1;
+    text-align: left;
+}
+
+.btn-tentang {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25274D;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 30px;
+}
+
+.btn-tentang:hover {
+    background-color: #fff;
+    color: #25274D;
+}
+
+.video-content {
+    flex-basis: 320px; /* Anda bisa mengatur lebar ini sesuai dengan kebutuhan */
+}
+
+.content-main{
+    display: flex;
+    background-color: #25274D;
+    color: #fff;
+    background-image: 
+    linear-gradient(rgba(37, 39, 77, 0.9), rgba(37, 39, 77, 0.9)), /* Warna #25274D dengan opacitas 60% */
+        url('images/social media/2018_SMK_GLORI_SHOW-748-e1576131968517-1100x400.jpg'); /* Gantikan dengan path ke gambar latar belakang Anda */
+        background-size: cover; /* Agar gambar menyesuaikan dengan ukuran kontainer */
+        background-position: center; /* Pusatkan gambar latar belakang */
+        background-repeat: no-repeat; /* Pastikan gambar tidak diulang */
+}
+
+.content{
+    padding: 100px;
+    gap: 50px;
+}
+
+.content h1{
+    font-size:50px;
+    padding-right: 50px;
+    animation: easeInText 1.5s forwards;
+}
+
+.content p{
+    padding-right: 100px;
+    font-align: center;
+}
+
+.video-content{
+    padding:100px;
+    padding-top:200px;
+    
+}
+
+.video-content video{
+    border-radius:22px;
+    border-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Properti ini memberikan shadow */  
+    animation: fadeInVideo 2s forwards;
+}
+
+.content-main2 {
+    display: flex;
+    justify-content: center;  /* Horizontally centers the content */
+
+}
+
+.swiper-container img {
+    width: 100%;
+    height: auto;
+}
+----------------------------------------------------------------
+.video-content2 {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+}
+.content2 h1{
+    font-size:50px;
+    margin:0;
+}
+
+.content2 p {
+    text-align: center;
+}
+
+.content2 {
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap; /* Ini memungkinkan item untuk pindah ke baris berikutnya jika tidak ada cukup ruang */
+    gap: 20px; /* Jarak antara foto */
+    display: flex;
+    justify-content: center; /* Menengahkan konten secara horizontal */
+    align-items: center;     /* Menengahkan konten secara vertikal */
+}
+
+.content2 img {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s; 
+    width: 300px; /* atau ukuran lebar lain yang Anda inginkan */
+    height: 200px; /* atau ukuran tinggi lain yang Anda inginkan */
+    object-fit: cover; /* memastikan gambar tidak terdistorsi */
+    transition: transform 0.3s ease-in-out;
+}
+
+.content2 img:hover {
+    transform: scale(1.1);
+}
+
+.content2 img.show {
+    opacity: 1;
+    transform: translateY(0);
+    animation: easeInImage 0.5s forwards;
+}
+----------------------------------------------------------------
+.sponsorship-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.sponsorship-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding:30px;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: center;  /* Menengahkan konten secara horizontal */
+    align-items: center;      /* Menengahkan konten secara vertikal */
+    gap: 40px;  /* Jarak antara logo-logo */
+    padding: 50px 0;
+}
+
+.sponsors img {
+    width: auto;  
+    height: 50px;
+
+}
+
+.sponsors img:hover {
+    opacity: 0.7;  /* Efek transparansi ketika hover */
+}
+
+  
+footer {
+    background-color: #25274D;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px; /* atau lebar maksimum yang Anda inginkan */
+    margin: 0 auto;
+    padding: 0 20px; /* padding sisi kanan dan kiri */
+}
+
+.footer-container p {
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px; /* Jarak antar ikon media sosial */
+}
+
+.social-links a {
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
+
+.social-links img {
+    width: 24px; /* Ukuran ikon media sosial; sesuaikan sesuai kebutuhan Anda */
+    height: auto;
+}
+
+
+/* Animasi ease-in untuk teks */
+@keyframes easeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animasi fade-in untuk video */
+@keyframes fadeInVideo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes easeInImage {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
